@@ -8,6 +8,8 @@
 
 #import "NFView.h"
 
+static UIColor *kNFViewDefaultBackgroundColor;
+
 CGFloat const kNFViewHeightFull = 568.0;
 CGFloat const kNFViewHeightNavbar = 524.0;
 CGFloat const kNFViewHeightNavbarStatusBar = 504.0;
@@ -21,6 +23,11 @@ CGFloat const kNFViewHeightNavbarOffset = 44.0;
 @end
 
 @implementation NFView
+
++ (void)setDefaultBackgroundColor:(UIColor *)color
+{
+    kNFViewDefaultBackgroundColor = color;
+}
 
 - (id)init
 {
@@ -36,6 +43,15 @@ CGFloat const kNFViewHeightNavbarOffset = 44.0;
 - (CGFloat)defaultHeight
 {
     return kNFViewHeightNavbarStatusBar;
+}
+
+- (UIColor *)defaultBackgroundColor
+{
+    if(!kNFViewDefaultBackgroundColor) {
+        return [UIColor whiteColor];
+    }
+
+    return kNFViewDefaultBackgroundColor;
 }
 
 - (void)load

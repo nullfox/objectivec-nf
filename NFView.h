@@ -21,6 +21,9 @@ extern CGFloat const kNFViewHeightNavbarOffset;
 @property (nonatomic, weak) UIViewController *controller;
 
 @property (nonatomic, readonly) CGFloat defaultHeight;
+@property (nonatomic, readonly) UIColor *defaultBackgroundColor;
+
++ (void)setDefaultBackgroundColor:(UIColor *)color;
 
 - (void)load;
 
