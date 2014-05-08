@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import <UIControl+ALActionBlocks.h>
+
 extern CGFloat const kNFViewHeightFull;
 extern CGFloat const kNFViewHeightNavbar;
 extern CGFloat const kNFViewHeightNavbarStatusBar;
