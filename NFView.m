@@ -36,6 +36,8 @@ CGFloat const kNFViewHeightNavbarOffset = 44.0;
     self.frame = CGRectMake(0.0, 0.0, [UIScreen mainScreen].applicationFrame.size.width, self.defaultHeight);
     
     self.events = [NSMutableDictionary dictionary];
+
+    self.backgroundColor = self.defaultBackgroundColor;
     
     return self;
 }
