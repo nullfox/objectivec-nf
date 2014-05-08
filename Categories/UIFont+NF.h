@@ -10,6 +10,6 @@
 
 @interface UIFont (NF)
 
-- (UIFont *)applicationFontWithSize:(CGFloat)size;
++ (UIFont *)applicationFontWithSize:(CGFloat)size;
 
 @end
